@@ -10,13 +10,13 @@ Vamos explorar o processo de criação de uma VM no Azure, passo a passo, como u
 
 Ao navegar para "Serviços do Azure" > "Máquinas virtuais" (ou pesquisando por "Máquinas virtuais"), somos recebidos(as) por esta tela.
 
-![Imagem 12: Máquinas Virtuais - Visão Geral (Vazia)](imagens/portal.azure.com1512.png)
+![Máquinas Virtuais - Visão Geral (Vazia)](imagens/portal.azure.com1512.png)
 
 Nesta primeira visualização, a tela mostra que **"Não há máquinas virtuais para exibir"**, o que é esperado, pois estamos começando. O portal nos convida a criar uma nova VM, e já oferece links úteis para saber mais sobre VMs Windows e Linux.
 
 Ao clicar em `Criar`, somos apresentados(as) a algumas opções para iniciar o processo de criação da VM.
 
-![Imagem 13: Máquinas Virtuais - Opções de Criação](imagens/portal.azure.com1513.png)
+![Máquinas Virtuais - Opções de Criação](imagens/portal.azure.com1513.png)
 
 Aqui, as opções principais são:
 *   **Máquina virtual do Azure:** Cria uma VM hospedada pelo Azure, com configurações padrão. É a opção mais comum para iniciar.
@@ -33,7 +33,7 @@ Ao selecionar a criação de uma VM, o portal nos leva a um assistente de vária
 
 Esta aba é o ponto de partida, onde definimos as configurações essenciais da VM.
 
-![Imagem 14: Criar Máquina Virtual - Básico (Parte 1)](imagens/portal.azure.com1514.png)
+![Criar Máquina Virtual - Básico (Parte 1)](imagens/portal.azure.com1514.png)
 
 *   **Detalhes do projeto:**
     *   **Assinatura:** `Azure subscription 1`. É a conta de faturamento onde os custos da VM serão associados. No meu caso é uma assinatura de avaliação gratuita.
@@ -58,7 +58,7 @@ Esta aba é o ponto de partida, onde definimos as configurações essenciais da 
 
 ---
 
-![Imagem 15: Criar Máquina Virtual - Básico (Parte 2)](imagens/portal.azure.com1515.png)
+![Criar Máquina Virtual - Básico (Parte 2)](imagens/portal.azure.com1515.png)
 
 *   **Conta de administrador:**
     *   **Nome de usuário:** `Cleiton-Financeiro`. O nome de usuário para acessar a VM.
@@ -75,7 +75,7 @@ Esta aba é o ponto de partida, onde definimos as configurações essenciais da 
 
 Nesta aba, configuramos os discos de armazenamento da VM.
 
-![Imagem 16: Criar Máquina Virtual - Discos](imagens/portal.azure.com1516.png)
+![Criar Máquina Virtual - Discos](imagens/portal.azure.com1516.png)
 
 *   **Criptografia de disco de VM:** `Não habilitada`. A criptografia protege os dados em repouso no disco da VM. Para dados sensíveis, habilitar a criptografia (gerenciada pela plataforma ou por chaves do cliente) é uma boa prática de segurança.
 *   **Disco de SO:**
@@ -92,7 +92,7 @@ Nesta aba, configuramos os discos de armazenamento da VM.
 
 A aba de rede é crucial para como sua VM se comunicará com a internet e com outros recursos no Azure.
 
-![Imagem 17: Criar Máquina Virtual - Rede](imagens/portal.azure.com1517.png)
+![Criar Máquina Virtual - Rede](imagens/portal.azure.com1517.png)
 
 *   **Interface de rede:**
     *   **Rede virtual:** `VM104035-vnet (novo)`. Uma rede virtual é uma rede isolada logicamente dentro do Azure, onde suas VMs e outros recursos podem se comunicar de forma segura e privada. O Azure cria uma nova rede virtual padrão para esta VM.
@@ -111,7 +111,7 @@ A aba de rede é crucial para como sua VM se comunicará com a internet e com ou
 
 Esta aba permite configurar opções para gerenciamento, segurança e operação da VM.
 
-![Imagem 18: Criar Máquina Virtual - Gerenciamento](imagens/portal.azure.com1518.png)
+![Criar Máquina Virtual - Gerenciamento](imagens/portal.azure.com1518.png)
 
 *   **Microsoft Defender para Nuvem:** `Habilitar plano básico gratuitamente`. O Defender para Nuvem oferece proteção aprimorada contra ameaças e gerenciamento de postura de segurança para seus recursos do Azure. Habilitar o plano básico é uma ótima maneira de começar a monitorar a segurança da sua VM.
 *   **Identidade gerenciada:** Deixado desmarcado. Identidades gerenciadas permitem que recursos do Azure se autentiquem em outros serviços do Azure (como Azure Key Vault, Azure Storage) de forma segura, sem precisar gerenciar credenciais em seu código.
@@ -123,7 +123,7 @@ Esta aba permite configurar opções para gerenciamento, segurança e operação
 
 Aqui configuramos como a VM será monitorada para garantir seu bom funcionamento.
 
-![Imagem 19: Criar Máquina Virtual - Monitoramento](imagens/portal.azure.com1519.png)
+![Criar Máquina Virtual - Monitoramento](imagens/portal.azure.com1519.png)
 
 *   **Alertas:** Deixado desmarcado. Alertas podem ser configurados para notificar sobre eventos importantes (por exemplo, CPU alta, pouco espaço em disco) e ajudar a reagir proativamente a problemas.
 *   **Diagnóstico:**
@@ -135,7 +135,7 @@ Aqui configuramos como a VM será monitorada para garantir seu bom funcionamento
 
 Esta aba oferece opções mais avançadas para otimizar o desempenho e a configuração da VM.
 
-![Imagem 20: Criar Máquina Virtual - Avançado](imagens/portal.azure.com1520.png)
+![Criar Máquina Virtual - Avançado](imagens/portal.azure.com1520.png)
 
 *   **Extensões:** Permite adicionar extensões à VM para automatizar tarefas de pós-implantação, como instalar software, configurar firewalls ou executar scripts personalizados. Há muitas extensões disponíveis para diversas finalidades.
 *   **Dados personalizados e inicialização de nuvem:**
@@ -149,7 +149,7 @@ Esta aba oferece opções mais avançadas para otimizar o desempenho e a configu
 
 As "Marcas" (Tags) são pares de nome/valor que ajudam a categorizar e organizar recursos do Azure.
 
-![Imagem 21: Criar Máquina Virtual - Marcas](imagens/portal.azure.com1521.png)
+![Criar Máquina Virtual - Marcas](imagens/portal.azure.com1521.png)
 
 *   **Propósito:**
     *   **Organização:** Marque recursos por ambiente (desenvolvimento, teste, produção), centro de custo, proprietário, departamento, etc.
@@ -162,7 +162,7 @@ Ao criar a VM, várias marcas padrão podem ser aplicadas automaticamente, mas v
 
 Esta é a etapa final antes de iniciar o provisionamento da VM.
 
-![Imagem 22: Criar Máquina Virtual - Revisar + Criar](imagens/portal.azure.com1522.png)
+![Criar Máquina Virtual - Revisar + Criar](imagens/portal.azure.com1522.png)
 
 *   **Validação aprovada:** O Azure verifica todas as configurações para garantir que não há erros ou conflitos antes de prosseguir.
 *   **Preço:** É apresentada uma estimativa de custo por hora para a VM com as configurações escolhidas (`0.0120/hora`). Isso é fundamental para o gerenciamento de custos na nuvem.
